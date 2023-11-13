@@ -1,15 +1,12 @@
-import { StrictMode } from "react";
+// import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 
 import "./normalize.css";
 import "./index.css";
 
-import App from "./App";
+import AppContext from "./App-context";
+// import AppReduce from "./App-reduce";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
+root.render(<AppContext />);
